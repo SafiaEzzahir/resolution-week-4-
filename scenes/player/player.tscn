@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bhb086hhovma8" path="res://icon.svg" id="1_8afob"]
 [ext_resource type="Script" uid="uid://dcgvq1hva52qn" path="res://scripts/player.gd" id="1_dovo2"]
+[ext_resource type="PackedScene" uid="uid://c3uissyl8ur4e" path="res://scenes/player/score.tscn" id="3_gmlin"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dovo2"]
 size = Vector2(128, 128)
@@ -9,8 +10,18 @@ size = Vector2(128, 128)
 [node name="Player" type="CharacterBody2D" unique_id=258995238]
 script = ExtResource("1_dovo2")
 
+[node name="Score" parent="." unique_id=755365929 instance=ExtResource("3_gmlin")]
+offset_left = 431.0
+offset_top = -296.0
+offset_right = 562.0
+offset_bottom = -174.0
+
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=999571226]
 texture = ExtResource("1_8afob")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2057300968]
 shape = SubResource("RectangleShape2D_dovo2")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1061540392]
+position_smoothing_enabled = true
+position_smoothing_speed = 6.0

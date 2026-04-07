@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://c3uissyl8ur4e"]
+
+[ext_resource type="Texture2D" uid="uid://bhb086hhovma8" path="res://icon.svg" id="1_hfipn"]
+
+[node name="Score" type="Label" unique_id=755365929]
+offset_right = 254.0
+offset_bottom = 54.0
+text = "0"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=784786448]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.023000002
+offset_left = -57.158
+offset_top = -12.0
+offset_right = 9.0
+offset_bottom = 35.0
+texture = ExtResource("1_hfipn")
+expand_mode = 2
+stretch_mode = 5
